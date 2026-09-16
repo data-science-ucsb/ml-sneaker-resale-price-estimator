@@ -34,7 +34,7 @@ web:
 	cd frontend && npm run dev
 
 notebooks:
-	$(JUPYTER) nbconvert --execute --to notebook --inplace
+	$(JUPYTER) nbconvert --execute --to notebook --inplace backend/notebooks/*.ipynb
 
 all: setup data train catalog test notebooks
 	cd frontend && npm run build
