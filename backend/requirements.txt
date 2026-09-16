@@ -1,4 +1,5 @@
 pandas>=3,<4
+pyarrow
 scikit-learn>=1.9,<2
 shap>=0.52
 flask>=3.1
