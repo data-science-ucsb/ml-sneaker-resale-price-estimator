@@ -24,3 +24,7 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+filterwarnings = [
+    "error",
+    "ignore:The set_(bad|over|under) function will be deprecated:PendingDeprecationWarning",
+]
