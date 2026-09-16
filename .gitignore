@@ -41,6 +41,9 @@ env/
 jupyter/
 .jupyter/
 
+# Node
+node_modules/
+
 # Project-specific
 backend/data/
 backend/models/
