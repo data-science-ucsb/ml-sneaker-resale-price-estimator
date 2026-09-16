@@ -57,12 +57,24 @@ export interface WatchlistItem {
   history: Snapshot[]
 }
 
-export interface RefreshResult {
+export interface RefreshSuccess {
   sneaker_id: string
   as_of: string
   mid: number
   extrapolated: boolean
 }
+
+export interface RefreshFailure {
+  sneaker_id: string
+  error: string
+}
+
+// POST /api/watchlist/refresh skips a watchlist item whose sneaker_id no
+// longer resolves against the current catalog/models (e.g. after a catalog
+// rebuild) instead of failing the whole request -- that item's entry comes
+// back as a RefreshFailure alongside the RefreshSuccess entries for every
+// other item.
+export type RefreshResult = RefreshSuccess | RefreshFailure
 
 export interface ImportanceEntry {
   feature: string
