@@ -14,15 +14,15 @@ setup:
 	cd frontend && npm install
 
 data:
-	$(PYTHON) -m sneakerml.data.download
-	$(PYTHON) -m sneakerml.data.simulate
-	$(PYTHON) -m sneakerml.data.clean
+	$(PYTHON) -m sneakerml.cli download
+	$(PYTHON) -m sneakerml.cli simulate
+	$(PYTHON) -m sneakerml.cli clean
 
 train:
-	$(PYTHON) -m sneakerml.train
+	$(PYTHON) -m sneakerml.cli train
 
 catalog:
-	$(PYTHON) -m sneakerml.catalog
+	$(PYTHON) -m sneakerml.cli catalog
 
 test:
 	$(PYTEST)
