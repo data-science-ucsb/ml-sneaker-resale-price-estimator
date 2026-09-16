@@ -3,6 +3,7 @@
 Usage:
     python -m sneakerml.cli download [--kaggle]
     python -m sneakerml.cli simulate [--n N] [--seed SEED]
+    python -m sneakerml.cli clean
 """
 
 from __future__ import annotations
@@ -11,7 +12,8 @@ import argparse
 
 import pandas as pd
 
-from sneakerml.config import RANDOM_SEED, RAW_DIR
+from sneakerml.config import PROCESSED_DIR, RANDOM_SEED, RAW_DIR
+from sneakerml.data.clean import build_clean_dataset
 from sneakerml.data.download import fetch_stockx
 from sneakerml.data.simulate import make_listings
 
@@ -35,6 +37,12 @@ def _cmd_simulate(args: argparse.Namespace) -> None:
     print(f"Wrote {dest} ({len(listings)} rows)")
 
 
+def _cmd_clean(args: argparse.Namespace) -> None:
+    out = PROCESSED_DIR / "clean.parquet"
+    df = build_clean_dataset(raw_dir=RAW_DIR, out=out)
+    print(f"Wrote {out} ({len(df)} rows)")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="sneakerml")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -53,6 +61,11 @@ def build_parser() -> argparse.ArgumentParser:
     p_simulate.add_argument("--n", type=int, default=20_000)
     p_simulate.add_argument("--seed", type=int, default=RANDOM_SEED)
     p_simulate.set_defaults(func=_cmd_simulate)
+
+    p_clean = subparsers.add_parser(
+        "clean", help="Clean and merge the StockX and listings sources into clean.parquet"
+    )
+    p_clean.set_defaults(func=_cmd_clean)
 
     return parser
 
