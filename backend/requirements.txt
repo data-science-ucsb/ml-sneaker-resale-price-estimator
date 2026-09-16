@@ -1,0 +1,11 @@
+pandas>=3,<4
+scikit-learn>=1.9,<2
+shap>=0.52
+flask>=3.1
+flask-cors>=6
+joblib
+pytest
+jupyter
+nbconvert
+ipykernel
+matplotlib
