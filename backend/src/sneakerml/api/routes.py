@@ -214,10 +214,40 @@ def delete_watchlist_item(item_id: int):
     return "", 204
 
 
+#: Sane bounds for `advance_days` -- large enough for any realistic
+#: watchlist workflow, small enough that a bogus/huge value can't blow up
+#: `datetime.timedelta` (which raises `OverflowError` well before this).
+MIN_ADVANCE_DAYS = 1
+MAX_ADVANCE_DAYS = 3650
+
+
+def _parse_advance_days(raw):
+    """Validate `advance_days`: must be an int (or int-convertible) in
+    `[MIN_ADVANCE_DAYS, MAX_ADVANCE_DAYS]`. Raises `ValueError` otherwise."""
+    if isinstance(raw, bool) or not isinstance(raw, (int, float, str)):
+        raise ValueError(f"'advance_days' must be an integer, got {raw!r}")
+    try:
+        value = int(raw)
+    except (TypeError, ValueError):
+        raise ValueError(f"'advance_days' must be an integer, got {raw!r}") from None
+    if isinstance(raw, float) and raw != value:
+        raise ValueError(f"'advance_days' must be an integer, got {raw!r}")
+    if not (MIN_ADVANCE_DAYS <= value <= MAX_ADVANCE_DAYS):
+        raise ValueError(
+            f"'advance_days' must be between {MIN_ADVANCE_DAYS} and {MAX_ADVANCE_DAYS}, got {value}"
+        )
+    return value
+
+
 @bp.post("/watchlist/refresh")
 def refresh_watchlist():
     body = request.get_json(silent=True) or {}
-    advance_days = body.get("advance_days", 30)
+
+    try:
+        advance_days = _parse_advance_days(body.get("advance_days", 30))
+    except ValueError as exc:
+        return _error(str(exc), 400)
+
     explicit_as_of = None
     if body.get("as_of") is not None:
         try:
@@ -238,7 +268,21 @@ def refresh_watchlist():
             latest_as_of = dt.date.fromisoformat(snapshots[-1]["as_of"]) if snapshots else dt.date.today()
             new_as_of = latest_as_of + dt.timedelta(days=advance_days)
 
-        prediction = predictor.predict(item["sneaker_id"], item["size"], as_of=new_as_of)
+        # A watchlist row's sneaker_id can outlive the catalog it was
+        # created against (e.g. after a catalog rebuild); one missing/bad
+        # item must not take down the refresh for every other item on the
+        # list, so it's skipped and reported rather than left to 500.
+        try:
+            prediction = predictor.predict(item["sneaker_id"], item["size"], as_of=new_as_of)
+        except (KeyError, ValueError) as exc:
+            refreshed.append(
+                {
+                    "sneaker_id": item["sneaker_id"],
+                    "error": str(exc),
+                }
+            )
+            continue
+
         db.add_snapshot(
             conn,
             item["id"],

@@ -264,12 +264,34 @@ def evaluate(
 # ---------------------------------------------------------------------------
 
 
+def _is_git_dirty(cwd: Path) -> bool:
+    """Whether the working tree has uncommitted changes (staged or not)."""
+    try:
+        status = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=cwd,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except (OSError, ValueError):  # pragma: no cover - defensive
+        return False
+    return status.returncode == 0 and bool(status.stdout.strip())
+
+
 def _git_sha() -> str | None:
-    """Current commit sha, or None outside a git checkout."""
+    """Current commit sha, or None outside a git checkout.
+
+    Appends a `-dirty` suffix when the working tree has uncommitted
+    changes, so `metadata.json` never silently names a commit that
+    doesn't actually match what was trained (a stale/misleading
+    `git_sha` has shipped from exactly this gap before).
+    """
+    cwd = Path(__file__).resolve().parent
     try:
         result = subprocess.run(
             ["git", "rev-parse", "HEAD"],
-            cwd=Path(__file__).resolve().parent,
+            cwd=cwd,
             capture_output=True,
             text=True,
             check=False,
@@ -277,7 +299,11 @@ def _git_sha() -> str | None:
     except (OSError, ValueError):  # pragma: no cover - defensive
         return None
     sha = result.stdout.strip()
-    return sha if result.returncode == 0 and sha else None
+    if result.returncode != 0 or not sha:
+        return None
+    if _is_git_dirty(cwd):
+        sha = f"{sha}-dirty"
+    return sha
 
 
 def _as_date_string(value) -> str | None:

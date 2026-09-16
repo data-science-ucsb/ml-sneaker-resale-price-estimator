@@ -270,7 +270,17 @@ def dedupe(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
 
     1. Within-source: exact duplicates on
        (source, slug, shoe_size, order_date, sale_price) — scrape
-       artifacts appended by a single source.
+       artifacts appended by a single source. This key does not
+       distinguish "an intentional duplicate scrape row" from "two
+       different people buying the same popular shoe, in the same size,
+       on the same day, at the same price" -- on the real StockX side,
+       most of what this pass removes is the latter (genuine repeat
+       sales of high-volume shoes), not scrape noise. The count is
+       reported *per source* precisely so that distinction isn't
+       flattened into one misleading number: the simulated ("goatish")
+       side is where deliberate duplicate rows actually live (see
+       `simulate.DUPLICATE_FRACTION`), while the real StockX side's
+       count is overwhelmingly legitimate repeat sales.
     2. Cross-source: the same underlying sale can appear on both
        platforms. Key is (slug, shoe_size, order_date) *excluding*
        source, with sale_price matching within
@@ -282,11 +292,16 @@ def dedupe(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """
     n_start = len(df)
 
-    before_within = len(df)
+    before_within_by_source = df["source"].value_counts().to_dict()
     df = df.drop_duplicates(
         subset=["source", "slug", "shoe_size", "order_date", "sale_price"], keep="first"
     )
-    within_source_dupes_removed = before_within - len(df)
+    after_within_by_source = df["source"].value_counts().to_dict()
+    within_source_dupes_removed_by_source = {
+        source: int(before_within_by_source.get(source, 0) - after_within_by_source.get(source, 0))
+        for source in before_within_by_source
+    }
+    within_source_dupes_removed = sum(within_source_dupes_removed_by_source.values())
 
     # cross-source pass: group by (slug, order_date) only -- shoe_size is
     # excluded from the group key itself because a dirtied/missing size on
@@ -349,6 +364,7 @@ def dedupe(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     report = {
         "rows_before_dedupe": n_start,
         "within_source_dupes_removed": int(within_source_dupes_removed),
+        "within_source_dupes_removed_by_source": within_source_dupes_removed_by_source,
         "cross_source_dupes_removed": int(cross_source_dupes_removed),
         "rows_after_dedupe": len(df),
     }
@@ -403,6 +419,7 @@ def build_clean_dataset(
         "rows_out": len(combined),
         "dropped_unmatched_slugs": int(dropped_unmatched),
         "within_source_dupes_removed": dedupe_report["within_source_dupes_removed"],
+        "within_source_dupes_removed_by_source": dedupe_report["within_source_dupes_removed_by_source"],
         "cross_source_dupes_removed": dedupe_report["cross_source_dupes_removed"],
         "sizes_imputed": sizes_imputed,
         "invalid_price_rows_filtered": int(filtered_out),

@@ -230,10 +230,23 @@ From `backend/data/processed/clean_report.json`:
 |---|---|
 | Rows in (StockX + simulated, concatenated) | 121,956 |
 | Rows out (after cleaning + dedup) | 90,944 |
-| Within-source dupes removed | 19,102 |
+| Within-source dupes removed (total) | 19,102 |
+| &nbsp;&nbsp;— stockx | 16,206 |
+| &nbsp;&nbsp;— goatish | 2,896 |
 | Cross-source dupes removed | 11,910 |
 | Sizes imputed | 380 |
 | Invalid-price rows filtered | 0 |
+
+The within-source total is broken down per source because it combines two
+very different things. On the **stockx** side it is overwhelmingly
+*genuine* repeat sales — two different people buying the same popular
+shoe, in the same size, on the same day, at the same price, which is
+unremarkable for a high-volume item with thousands of sales over ~18
+months — not scrape noise. On the **goatish** side it is exactly what
+you'd expect: `simulate.py` deliberately re-appends ~10% of rows as exact
+duplicates to stand in for scrape artifacts. Reporting one merged number
+would flatten that distinction and imply the real StockX data is dirtier
+than it actually is.
 
 The cross-source figure removes simulated "goatish" listings that turned
 out to be near-duplicates of a real StockX sale (see Data provenance

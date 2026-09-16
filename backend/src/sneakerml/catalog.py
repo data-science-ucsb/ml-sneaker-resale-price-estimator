@@ -133,8 +133,11 @@ def search(catalog: pd.DataFrame, q: str, limit: int = 10) -> pd.DataFrame:
     """Case-insensitive substring search over display name, SKU and slug.
 
     Results are ranked by `n_sales` (most-traded first) and truncated to
-    `limit`. An empty/whitespace query returns the top sellers, which is
-    what the frontend shows before the user types anything.
+    `limit`. An empty/whitespace query returns the top sellers -- but
+    this path is exercised only by tests, not by any real caller: the API
+    layer (`routes.search_sneakers`) rejects a blank `q` with 400, and
+    the frontend's `SearchBar` never calls the endpoint until the user
+    has typed 2+ characters.
     """
     query = str(q or "").strip().lower()
     ranked = catalog.sort_values(["n_sales", "id"], ascending=[False, True])

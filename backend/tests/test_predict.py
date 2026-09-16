@@ -5,6 +5,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 
+import numpy as np
 import pandas as pd
 import pytest
 
@@ -124,6 +125,40 @@ def test_in_range_as_of_is_not_extrapolated(predictor):
 # ---------------------------------------------------------------------------
 # errors
 # ---------------------------------------------------------------------------
+
+
+def test_crossed_quantiles_are_sorted_and_flagged(predictor):
+    """The q10/q50/q90 models are trained independently and can cross on a
+    given row (see predict.py's module docstring). Force a crossed case by
+    swapping in fake models whose predictions are deliberately out of
+    order, and confirm the response still sorts to low<=mid<=high while
+    honestly reporting `crossed: True`."""
+
+    class _FakeModel:
+        def __init__(self, value_log1p):
+            self._value = value_log1p
+
+        def predict(self, X):
+            return np.full(len(X), self._value)
+
+    real_models = predictor.models
+    # log1p-space predictions such that expm1 gives q10=900, q50=500, q90=100
+    # -- i.e. q10 > q50 > q90, a fully crossed case.
+    fake_models = {
+        "q10": _FakeModel(np.log1p(900.0)),
+        "q50": _FakeModel(np.log1p(500.0)),
+        "q90": _FakeModel(np.log1p(100.0)),
+    }
+    predictor.models = fake_models
+    try:
+        result = predictor.predict(BELUGA_SLUG, 10.0)
+    finally:
+        predictor.models = real_models
+
+    assert result["crossed"] is True
+    assert result["low"] <= result["mid"] <= result["high"]
+    assert result["low"] == pytest.approx(100.0)
+    assert result["high"] == pytest.approx(900.0)
 
 
 def test_unknown_sneaker_id_raises_key_error(predictor):

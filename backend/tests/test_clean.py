@@ -9,6 +9,7 @@ import pandas as pd
 import pytest
 
 from sneakerml.config import RANDOM_SEED
+from sneakerml.data import clean, simulate
 from sneakerml.data.clean import (
     build_clean_dataset,
     dedupe,
@@ -84,10 +85,19 @@ def test_parse_price_basic():
 
 def test_normalize_price_goatish_round_trips_within_a_dollar():
     original = 500.0
-    goatish_price = original * 1.095 + 13.95
+    goatish_price = original * simulate.FEE_MULTIPLIER + simulate.FEE_FLAT_FEE
     goatish_str = f"${goatish_price:,.2f}"
     recovered = normalize_price(parse_price(goatish_str), "goatish")
     assert abs(recovered - original) < 1.0
+
+
+def test_clean_fee_and_size_constants_match_simulate():
+    """clean.py hand-copies simulate.py's fee/size constants to invert its
+    transforms; if simulate.py's formula ever changes, this must fail loudly
+    instead of clean.py silently keeping stale numbers."""
+    assert clean.GOATISH_FEE_MULTIPLIER == simulate.FEE_MULTIPLIER
+    assert clean.GOATISH_FEE_FLAT_FEE == simulate.FEE_FLAT_FEE
+    assert clean.EU_OFFSET == simulate.EU_OFFSET
 
 
 def test_normalize_size_eu_to_us():
@@ -219,6 +229,7 @@ def test_dedupe_within_source_removes_exact_duplicates():
     result, report = dedupe(df)
     assert len(result) == 2
     assert report["within_source_dupes_removed"] == 1
+    assert report["within_source_dupes_removed_by_source"] == {"stockx": 1}
 
 
 def test_dedupe_cross_source_removal_rates(fixture_csv, stockx_sample_df):
@@ -290,6 +301,9 @@ def test_build_clean_dataset_writes_parquet_and_report(raw_dir, tmp_path):
     assert "rows_in" in report
     assert "rows_out" in report
     assert "within_source_dupes_removed" in report
+    assert "within_source_dupes_removed_by_source" in report
+    assert set(report["within_source_dupes_removed_by_source"]) <= {"stockx", "goatish"}
+    assert sum(report["within_source_dupes_removed_by_source"].values()) == report["within_source_dupes_removed"]
     assert "cross_source_dupes_removed" in report
     assert "sizes_imputed" in report
 

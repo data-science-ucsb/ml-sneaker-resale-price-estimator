@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import subprocess
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd
@@ -16,6 +18,7 @@ from sneakerml.features import CATEGORICAL, NUMERIC, TARGET, add_features
 from sneakerml.train import (
     FEATURES,
     QUANTILES,
+    _git_sha,
     build_pipeline,
     evaluate,
     load_artifacts,
@@ -148,6 +151,7 @@ def test_evaluate_returns_expected_keys(models, split):
         "mae",
         "mape",
         "coverage",
+        "crossing_rate",
         "pinball_q10",
         "pinball_q50",
         "pinball_q90",
@@ -211,3 +215,38 @@ def test_artifacts_round_trip(models, split, tmp_path):
     # metadata.json is plain JSON that notebooks can read directly
     raw = json.loads((tmp_path / "metadata.json").read_text())
     assert raw["data_end_date"] == metadata["data_end_date"]
+
+
+# ---------------------------------------------------------------------------
+# _git_sha
+# ---------------------------------------------------------------------------
+
+
+def _fake_run(dirty: bool):
+    """Build a stand-in for `subprocess.run` covering both git calls `_git_sha` makes."""
+
+    def run(args, **kwargs):
+        if args[:2] == ["git", "rev-parse"]:
+            return subprocess.CompletedProcess(args, returncode=0, stdout="abc1234def5678\n", stderr="")
+        if args[:2] == ["git", "status"]:
+            porcelain = " M some_file.py\n" if dirty else ""
+            return subprocess.CompletedProcess(args, returncode=0, stdout=porcelain, stderr="")
+        raise AssertionError(f"unexpected subprocess.run call: {args}")
+
+    return run
+
+
+def test_git_sha_clean_tree_has_no_dirty_suffix():
+    with patch("sneakerml.train.subprocess.run", side_effect=_fake_run(dirty=False)):
+        sha = _git_sha()
+    assert sha == "abc1234def5678"
+    assert not sha.endswith("-dirty")
+
+
+def test_git_sha_dirty_tree_gets_dirty_suffix():
+    """A working tree with uncommitted changes must not silently produce a
+    sha that looks clean -- metadata.json has shipped a stale sha before
+    from exactly this gap."""
+    with patch("sneakerml.train.subprocess.run", side_effect=_fake_run(dirty=True)):
+        sha = _git_sha()
+    assert sha == "abc1234def5678-dirty"

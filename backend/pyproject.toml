@@ -21,10 +21,6 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.pytest.ini_options]
-pythonpath = ["src"]
-testpaths = ["tests"]
-filterwarnings = [
-    "error",
-    "ignore:The set_(bad|over|under) function will be deprecated:PendingDeprecationWarning",
-]
+# Pytest configuration lives in backend/pytest.ini, which always wins over
+# a [tool.pytest.ini_options] table here -- a duplicated copy in this file
+# would be dead and could silently drift, so it is intentionally absent.

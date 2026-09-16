@@ -4,6 +4,14 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ContributionBars } from "@/components/ContributionBars"
 
+// Must match sneakerml.features.UNKNOWN_COLORWAY / OTHER_SILHOUETTE exactly --
+// these sentinels mean "could not be parsed from the shoe's name" and are
+// deliberately stripped from `display_name` server-side (catalog.display_name_for),
+// but the raw `colorway`/`silhouette` fields still carry them, so any badge
+// rendering those fields directly must skip the sentinel value too.
+const UNKNOWN_COLORWAY = "unknown"
+const OTHER_SILHOUETTE = "other"
+
 interface ResultCardProps {
   prediction: Prediction
   onAddToWatchlist: () => void
@@ -28,8 +36,12 @@ export function ResultCard({ prediction, onAddToWatchlist, adding, alreadyOnWatc
           <h2 className="text-xl font-semibold truncate">{sneaker.display_name}</h2>
           <div className="mt-2 flex flex-wrap gap-1.5">
             <Badge variant="secondary">{sneaker.brand}</Badge>
-            {sneaker.silhouette && <Badge variant="secondary">{sneaker.silhouette}</Badge>}
-            {sneaker.colorway && <Badge variant="secondary">{sneaker.colorway}</Badge>}
+            {sneaker.silhouette && sneaker.silhouette !== OTHER_SILHOUETTE && (
+              <Badge variant="secondary">{sneaker.silhouette}</Badge>
+            )}
+            {sneaker.colorway && sneaker.colorway !== UNKNOWN_COLORWAY && (
+              <Badge variant="secondary">{sneaker.colorway}</Badge>
+            )}
           </div>
           <p className="mt-1 text-xs text-neutral-400">
             {sneaker.sku} &middot; size {prediction.size} &middot; as of {as_of}
