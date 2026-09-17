@@ -1,0 +1,301 @@
+﻿Order Date,Brand,Sneaker Name,Sale Price,Retail Price,Release Date,Shoe Size,Buyer Region,Days Since,Profit
+9/15/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-White,860,220,12/17/16,6,California,272,640
+9/29/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,475,220,4/29/17,10.5,New Jersey,153,255
+10/13/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,450,220,4/29/17,7.5,Michigan,167,230
+11/2/17,Off-White,Air-Jordan-1-Retro-High-Off-White-Chicago,1855,190,9/9/17,10.5,New York,54,1665
+11/12/17,Off-White,Nike-Air-Presto-Off-White,925,160,9/9/17,11,New Jersey,64,765
+11/17/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,870,220,11/18/17,7,New Jersey,-1,650
+11/20/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017,732,220,2/11/17,8.5,New York,282,512
+11/22/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,497,220,11/25/17,12,Virginia,-3,277
+11/24/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,424,220,11/25/17,10,Connecticut,-1,204
+11/24/17,Off-White,Nike-React-Hyperdunk-2017-Flyknit-Off-White,400,200,11/1/17,9.5,Massachusetts,23,200
+11/25/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,386,220,11/25/17,6,Maryland,0,166
+11/25/17,Off-White,Nike-React-Hyperdunk-2017-Flyknit-Off-White,392,200,11/1/17,10,New York,24,192
+11/27/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,395,220,11/25/17,10,Minnesota,2,175
+11/27/17,Off-White,Nike-Air-Force-1-Low-Off-White,475,170,11/1/17,10,California,26,305
+11/28/17,Off-White,Nike-Blazer-Mid-Off-White,485,130,9/9/17,8,New York,80,355
+11/29/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,367,220,11/25/17,6,Michigan,4,147
+11/30/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,398,220,11/25/17,10.5,California,5,178
+12/1/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,370,220,11/25/17,10,New York,6,150
+12/2/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,395,220,11/25/17,12,Texas,7,175
+12/3/17,Off-White,Air-Jordan-1-Retro-High-Off-White-Chicago,1175,190,9/9/17,10.5,Michigan,85,985
+12/5/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,365,220,11/25/17,10,Georgia,10,145
+12/6/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,371,220,11/25/17,10.5,Florida,11,151
+12/7/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,630,220,2/25/17,5,New York,285,410
+12/9/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,339,220,11/25/17,5,California,14,119
+12/11/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,418,220,11/25/17,12.5,New York,16,198
+12/12/17,Off-White,Nike-Air-VaporMax-Off-White,645,250,9/9/17,8,New York,94,395
+12/14/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,390,220,12/16/17,13,Florida,-2,170
+12/15/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,385,220,12/16/17,12,Ohio,-1,165
+12/16/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,375,220,12/16/17,9,Massachusetts,0,155
+12/16/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,530,220,2/25/17,9,New Jersey,294,310
+12/18/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,345,220,11/25/17,9,Florida,23,125
+12/19/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,435,220,11/25/17,12.5,New York,24,215
+12/20/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,384,220,12/16/17,6,California,4,164
+12/22/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,339,220,11/25/17,4,Colorado,27,119
+12/23/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,353,220,12/16/17,8.5,California,7,133
+12/25/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,393,220,12/16/17,12,New York,9,173
+12/27/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,420,220,11/25/17,12,Texas,32,200
+12/28/17, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,383,220,12/16/17,12,Minnesota,12,163
+12/29/17,Off-White,Nike-React-Hyperdunk-2017-Flyknit-Off-White,420,200,11/1/17,11,Massachusetts,58,220
+1/1/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,340,220,11/25/17,9,North Carolina,37,120
+1/3/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,350,220,11/25/17,8.5,South Carolina,39,130
+1/5/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,372,220,12/16/17,13,Georgia,20,152
+1/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,370,220,12/16/17,11,Washington,22,150
+1/10/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,346,220,12/16/17,9.5,California,25,126
+1/13/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,425,220,11/25/17,12,New Jersey,49,205
+1/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,364,220,11/25/17,9,Florida,52,144
+1/18/18,Off-White,Nike-Air-Max-90-Off-White,530,160,9/9/17,12.5,Ohio,131,370
+1/21/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,578,220,2/25/17,11,Maryland,330,358
+1/25/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,430,220,11/25/17,11,Massachusetts,61,210
+1/28/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,388,220,12/16/17,11,Texas,43,168
+2/1/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,393,220,11/25/17,10,North Carolina,68,173
+2/5/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,380,220,11/25/17,8.5,California,72,160
+2/8/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,365,220,12/16/17,11.5,Texas,54,145
+2/12/18,Off-White,Air-Jordan-1-Retro-High-Off-White-Chicago,1775,190,9/9/17,8.5,California,156,1585
+2/17/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,375,220,11/25/17,9,New York,84,155
+2/21/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,378,220,11/25/17,10,Michigan,88,158
+2/24/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red,972,220,11/23/16,10.5,California,458,752
+2/28/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,372,220,12/16/17,9.5,California,74,152
+3/3/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-White,740,220,12/17/16,9.5,Texas,441,520
+3/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,423,220,11/25/17,11,Indiana,102,203
+3/10/18,Off-White,Nike-Air-Max-97-Off-White,640,190,11/1/17,7,Florida,129,450
+3/14/18,Off-White,Nike-React-Hyperdunk-2017-Flyknit-Off-White,550,200,11/1/17,9.5,Michigan,133,350
+3/18/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,375,220,12/16/17,10,New York,92,155
+3/22/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,395,220,12/16/17,9.5,New York,96,175
+3/26/18,Off-White,Nike-Air-VaporMax-Off-White,955,250,9/9/17,11,Florida,198,705
+3/30/18,Off-White,Nike-Air-VaporMax-Off-White-2018,870,250,4/14/18,10,New York,-15,620
+4/3/18, Yeezy,Adidas-Yeezy-Boost-350-Low-Oxford-Tan,1023,200,12/29/15,7,New York,826,823
+4/6/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,398,220,12/16/17,14,Texas,111,178
+4/9/18,Off-White,Nike-Air-VaporMax-Off-White-Black,535,250,3/30/18,5,California,10,285
+4/13/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,555,220,2/25/17,9.5,California,412,335
+4/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,399,220,4/29/17,10,New York,352,179
+4/19/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,560,220,11/18/17,9,Missouri,152,340
+4/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017,800,220,2/11/17,11.5,Florida,436,580
+4/27/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,380,220,12/16/17,10,Oregon,132,160
+5/2/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,418,220,12/16/17,11,New York,137,198
+5/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-White,725,220,12/17/16,10.5,Illinois,506,505
+5/12/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,455,220,11/25/17,7,Pennsylvania,168,235
+5/17/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,443,220,12/16/17,5,Florida,152,223
+5/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,417,220,11/25/17,14,Florida,179,197
+5/25/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,434,220,11/25/17,13,New Jersey,181,214
+5/26/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,1015,190,6/23/18,10.5,California,-28,825
+5/29/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,455,220,12/16/17,7.5,Mississippi,164,235
+5/30/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,380,220,12/16/17,11,Pennsylvania,165,160
+5/30/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,950,190,6/23/18,9.5,California,-24,760
+5/31/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,895,190,6/23/18,10.5,California,-23,705
+6/3/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,980,190,6/23/18,9.5,New York,-20,790
+6/6/18,Off-White,Nike-Air-Max-97-Off-White,860,190,11/1/17,11,Arizona,217,670
+6/10/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,804,190,6/23/18,10.5,California,-13,614
+6/13/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,930,190,6/23/18,9.5,Massachusetts,-10,740
+6/15/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,599,190,6/23/18,4,California,-8,409
+6/18/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,368,220,12/16/17,9,New York,184,148
+6/19/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,695,190,6/23/18,10,North Carolina,-4,505
+6/20/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Black,341,200,6/14/18,9,New York,6,141
+6/22/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Black,325,200,6/14/18,10.5,Wisconsin,8,125
+6/24/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Total-Orange,294,200,6/14/18,10,Minnesota,10,94
+6/26/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,369,220,6/30/18,10.5,California,-4,149
+6/28/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,330,220,6/30/18,13,Illinois,-2,110
+6/29/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,324,220,6/30/18,9.5,California,-1,104
+6/30/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,300,220,6/30/18,5,Arizona,0,80
+6/30/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,295,220,6/30/18,12,Georgia,0,75
+6/30/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,300,220,6/30/18,6,Oregon,0,80
+7/1/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,293,220,6/30/18,12,Delaware,1,73
+7/2/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,800,190,6/23/18,5,Maryland,9,610
+7/3/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,368,220,12/16/17,9.5,Oregon,199,148
+7/4/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,380,220,4/29/17,9,California,431,160
+7/5/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,270,220,6/30/18,12,New Jersey,5,50
+7/6/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Total-Orange,273,200,6/14/18,11,California,22,73
+7/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,376,220,12/16/17,5,New York,203,156
+7/8/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,950,190,6/23/18,8.5,Tennessee,15,760
+7/9/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,255,220,6/30/18,7,Oregon,9,35
+7/10/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,267,220,6/30/18,10.5,Michigan,10,47
+7/11/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,268,220,6/30/18,6,Massachusetts,11,48
+7/13/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,770,190,6/23/18,10,California,20,580
+7/15/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,370,220,12/16/17,8.5,New Jersey,211,150
+7/16/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,254,220,6/30/18,9,Oregon,16,34
+7/18/18,Off-White,Nike-Air-VaporMax-Off-White-2018,590,250,4/14/18,11.5,Mississippi,95,340
+7/20/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,401,220,11/25/17,14,Pennsylvania,237,181
+7/22/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,390,220,12/16/17,10.5,New York,218,170
+7/24/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,680,190,6/23/18,12,Michigan,31,490
+7/26/18,Off-White,Nike-Air-Presto-Off-White-Black-2018,690,160,7/27/18,10,Oregon,-1,530
+7/27/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Total-Orange,300,200,6/14/18,14,Kansas,43,100
+7/29/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,820,190,6/23/18,5.5,California,36,630
+7/31/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,399,220,12/16/17,14,Florida,227,179
+8/1/18,Off-White,Nike-Air-Presto-Off-White-Black-2018,655,160,7/27/18,13,New Jersey,5,495
+8/2/18,Off-White,Nike-Air-Presto-Off-White-White-2018,746,160,8/3/18,9,California,-1,586
+8/3/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Black,368,200,6/14/18,9.5,Virginia,50,168
+8/5/18,Off-White,Nike-Air-Presto-Off-White-Black-2018,749,160,7/27/18,8,California,9,589
+8/6/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,275,220,6/30/18,11.5,California,37,55
+8/8/18,Off-White,Nike-Air-Presto-Off-White-White-2018,686,160,8/3/18,9,Virginia,5,526
+8/9/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,255,220,6/30/18,10,Connecticut,40,35
+8/11/18, Yeezy,Adidas-Yeezy-Boost-350-Low-Oxford-Tan,830,200,12/29/15,7.5,California,956,630
+8/13/18, Yeezy,Adidas-Yeezy-Boost-350-Low-V2-Beluga,730,220,9/24/16,10.5,Massachusetts,688,510
+8/14/18,Off-White,Nike-Air-Presto-Off-White-White-2018,578,160,8/3/18,12,Texas,11,418
+8/15/18,Off-White,Nike-Air-Presto-Off-White-White-2018,714,160,8/3/18,6,Oregon,12,554
+8/16/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,267,220,6/30/18,10,New York,47,47
+8/17/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,251,220,6/30/18,10.5,California,48,31
+8/20/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,399,220,12/16/17,10,Arizona,247,179
+8/21/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,251,220,6/30/18,9,Massachusetts,52,31
+8/24/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,1190,190,6/23/18,8.5,Illinois,62,1000
+8/27/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017,950,220,2/11/17,14,Virginia,562,730
+8/29/18,Off-White,Nike-Air-Max-97-Off-White-Elemental-Rose-Queen,1100,190,8/25/18,8,California,4,910
+8/31/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,273,220,6/30/18,10.5,Oregon,62,53
+9/4/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,399,220,12/16/17,10.5,Virginia,262,179
+9/6/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,279,220,6/30/18,6,New York,68,59
+9/10/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,388,220,12/16/17,10.5,Michigan,268,168
+9/13/18,Off-White,Nike-Air-Presto-Off-White-White-2018,640,160,8/3/18,8,Pennsylvania,41,480
+9/16/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,265,220,6/30/18,12,Georgia,78,45
+9/19/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,252,220,6/30/18,10,New York,81,32
+9/21/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,269,220,6/30/18,4.5,New Jersey,83,49
+9/24/18,Off-White,Nike-Air-VaporMax-Off-White-Black,770,250,3/30/18,12,New York,178,520
+9/26/18,Off-White,Nike-Air-Presto-Off-White-Black-2018,755,160,7/27/18,8,New York,61,595
+9/28/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,378,220,12/16/17,9.5,Maryland,286,158
+9/29/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,240,220,4/29/17,10.5,Texas,518,20
+10/1/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,385,220,12/16/17,10,North Carolina,289,165
+10/2/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,247,220,4/29/17,5,New York,521,27
+10/3/18,Off-White,Nike-Air-VaporMax-Off-White-Black,750,250,3/30/18,8,New York,187,500
+10/4/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,400,220,2/25/17,11,New Jersey,586,180
+10/5/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,355,220,2/25/17,12,New York,587,135
+10/6/18,Off-White,Nike-Air-Presto-Off-White-Black-2018,757,160,7/27/18,11,California,71,597
+10/8/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,255,220,4/29/17,4,Oregon,527,35
+10/9/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,389,220,2/25/17,10,Massachusetts,591,169
+10/10/18,Off-White,Nike-Blazer-Mid-Off-White-Grim-Reaper,535,130,10/3/18,10.5,New York,7,405
+10/12/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,249,220,4/29/17,10.5,Utah,531,29
+10/14/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,350,220,2/25/17,11,Delaware,596,130
+10/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,244,220,4/29/17,10.5,Utah,535,24
+10/18/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,245,220,4/29/17,11,Illinois,537,25
+10/20/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,250,220,4/29/17,11,Michigan,539,30
+10/22/18,Off-White,Nike-Air-Max-97-Off-White-Black,656,190,10/18/18,10,Florida,4,466
+10/24/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,455,220,11/18/17,12,Florida,340,235
+10/26/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,257,220,4/29/17,14,Florida,545,37
+10/28/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,368,220,2/25/17,12,North Carolina,610,148
+10/30/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,318,220,2/25/17,12,New York,612,98
+10/31/18,Off-White,Nike-Air-Force-1-Low-Off-White,1000,170,11/1/17,10,California,364,830
+10/31/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,210,220,6/30/18,8.5,Arizona,123,-10
+11/2/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,230,220,4/29/17,9,California,552,10
+11/4/18,Off-White,Nike-Zoom-Fly-Mercurial-Off-White-Total-Orange,232,200,6/14/18,10.5,New Jersey,143,32
+11/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,321,220,2/25/17,9,New Mexico,620,101
+11/9/18,Off-White,Nike-Blazer-Mid-Off-White,900,130,9/9/17,11,Florida,426,770
+11/12/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,450,220,11/23/18,7.5,Rhode Island,-11,230
+11/14/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,280,220,2/25/17,8,Colorado,627,60
+11/15/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,261,220,2/25/17,11,California,628,41
+11/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,293,220,2/25/17,8,California,629,73
+11/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,285,220,2/25/17,13,New York,629,65
+11/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,291,220,2/25/17,13,Ohio,629,71
+11/16/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,279,220,2/25/17,11,California,629,59
+11/17/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,308,220,2/25/17,13,California,630,88
+11/18/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017,720,220,2/11/17,8,Texas,645,500
+11/19/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,430,220,12/16/17,7,Colorado,338,210
+11/20/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,240,220,4/29/17,8,Connecticut,570,20
+11/21/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,232,220,4/29/17,10,Wisconsin,571,12
+11/22/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,239,220,4/29/17,9,Wisconsin,572,19
+11/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Beluga-2pt0,440,220,11/25/17,12,New York,363,220
+11/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,265,220,11/23/18,10,Texas,0,45
+11/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,273,220,11/23/18,12,Texas,0,53
+11/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,295,220,2/25/17,9.5,California,636,75
+11/24/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,240,220,4/29/17,12,Missouri,574,20
+11/24/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,336,220,2/25/17,6.5,New York,637,116
+11/25/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,285,220,2/25/17,10,Hawaii,638,65
+11/26/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,275,220,11/23/18,14,New York,3,55
+11/26/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,300,220,2/25/17,5,New York,639,80
+11/27/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,259,220,11/23/18,10,California,4,39
+11/27/18,Off-White,Nike-Zoom-Fly-Off-White-Pink,317,170,11/28/18,10.5,California,-1,147
+11/28/18,Off-White,Air-Jordan-1-Retro-High-Off-White-White,1737,190,3/3/18,13,Florida,270,1547
+11/29/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,260,220,11/23/18,14,Tennessee,6,40
+11/29/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,244,220,6/30/18,5,Florida,152,24
+11/30/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,300,220,2/25/17,11.5,New Jersey,643,80
+12/1/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,266,220,11/23/18,11.5,New York,8,46
+12/2/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,298,220,4/29/17,4.5,Pennsylvania,582,78
+12/2/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,230,220,6/30/18,8,New York,155,10
+12/3/18,Off-White,Nike-Blazer-Mid-Off-White-Grim-Reaper,495,130,10/3/18,11.5,California,61,365
+12/4/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,329,220,2/25/17,13,Ohio,647,109
+12/5/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,242,220,11/23/18,13,Missouri,12,22
+12/6/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,230,220,11/23/18,9.5,Nevada,13,10
+12/7/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,259,220,11/23/18,10,New Jersey,14,39
+12/8/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,238,220,4/29/17,9,Texas,588,18
+12/9/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Blue-Tint,385,220,12/16/17,10.5,Florida,358,165
+12/10/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Red-2017,709,220,2/11/17,10,New York,667,489
+12/10/18, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,265,220,6/30/18,5.5,New York,163,45
+12/11/18,Off-White,Nike-Air-VaporMax-Off-White-2018,628,250,4/14/18,11.5,Michigan,241,378
+12/12/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,283,220,2/25/17,8,California,655,63
+12/13/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,264,220,11/23/18,6,California,20,44
+12/14/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,240,220,4/29/17,10.5,Georgia,594,20
+12/14/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,300,220,11/18/17,13,Maryland,391,80
+12/14/18,Off-White,Nike-Air-Presto-Off-White-White-2018,570,160,8/3/18,10,New York,133,410
+12/15/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,270,220,11/18/17,7.5,Georgia,392,50
+12/15/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,431,220,12/27/18,9,Maryland,-12,211
+12/16/18,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,750,190,6/23/18,13,Rhode Island,176,560
+12/17/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,253,220,11/23/18,5,California,24,33
+12/18/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,237,220,4/29/17,10,Florida,598,17
+12/18/18,Off-White,Nike-Air-Max-97-Off-White-Menta,725,190,10/18/18,10,Florida,61,535
+12/19/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,255,220,11/23/18,10,Georgia,26,35
+12/19/18,Off-White,Nike-React-Hyperdunk-2017-Flyknit-Off-White,700,200,11/1/17,11.5,Arizona,413,500
+12/20/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,340,220,2/25/17,12,California,663,120
+12/21/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,280,220,4/29/17,6.5,Massachusetts,601,60
+12/21/18,Off-White,Nike-Zoom-Fly-Off-White-Black-Silver,290,170,10/13/18,9,Virginia,69,120
+12/22/18,Off-White,Nike-Air-Force-1-Low-Off-White-Black-White,466,170,12/19/18,11.5,New York,3,296
+12/23/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,310,220,2/25/17,9,Florida,666,90
+12/24/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,299,220,2/25/17,10,New Jersey,667,79
+12/25/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,254,220,11/18/17,11,New Jersey,402,34
+12/25/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,296,220,12/27/18,5,Maryland,-2,76
+12/26/18,Off-White,Nike-Air-Force-1-Low-Off-White-Black-White,477,170,12/19/18,11,Colorado,7,307
+12/26/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,304,220,12/27/18,11,Illinois,-1,84
+12/27/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,322,220,2/25/17,10.5,Florida,670,102
+12/27/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,266,220,12/27/18,7.5,New York,0,46
+12/27/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,276,220,12/27/18,6,Massachusetts,0,56
+12/28/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,240,220,11/23/18,10.5,California,35,20
+12/28/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,273,220,12/27/18,9.5,Virginia,1,53
+12/29/18, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,264,220,11/18/17,5,New York,406,44
+12/29/18, Yeezy,adidas-Yeezy-Boost-350-V2-Static,272,220,12/27/18,6,New York,2,52
+12/30/18,Off-White,Nike-Zoom-Fly-Off-White-Black-Silver,339,170,10/13/18,12,New York,78,169
+12/31/18,Off-White,Nike-Air-Force-1-Low-Off-White-Black-White,575,170,12/19/18,9.5,California,12,405
+1/1/19,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,900,190,6/23/18,10,New Mexico,192,710
+1/2/19,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,1095,190,6/23/18,9,Massachusetts,193,905
+1/3/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-White,693,220,12/17/16,8,California,747,473
+1/3/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,275,220,12/27/18,10.5,Pennsylvania,7,55
+1/4/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,250,220,11/23/18,10,Connecticut,42,30
+1/4/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,399,220,12/26/18,10.5,Minnesota,9,179
+1/5/19,Off-White,Nike-Zoom-Fly-Off-White-Black-Silver,299,170,10/13/18,9,Tennessee,84,129
+1/6/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,265,220,11/18/17,11.5,New York,414,45
+1/7/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,241,220,4/29/17,13,California,618,21
+1/7/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,427,220,12/26/18,9.5,California,12,207
+1/8/19,Off-White,Nike-Zoom-Fly-Off-White-Black-Silver,298,170,10/13/18,6.5,Michigan,87,128
+1/9/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,230,220,4/29/17,7.5,Illinois,620,10
+1/9/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,419,220,12/26/18,9,Oregon,14,199
+1/10/19,Off-White,Nike-Air-VaporMax-Off-White-2018,607,250,4/14/18,13,Pennsylvania,271,357
+1/11/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,255,220,11/23/18,7,Georgia,49,35
+1/12/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,230,220,4/29/17,8.5,Florida,623,10
+1/13/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-Copper,590,220,11/23/16,10,Arkansas,781,370
+1/14/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,252,220,11/18/17,12,Oregon,422,32
+1/15/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,246,220,11/18/17,10,Arkansas,423,26
+1/16/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,290,220,11/23/18,11.5,Virginia,54,70
+1/17/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,250,220,11/23/18,4.5,California,55,30
+1/18/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,325,220,2/25/17,9.5,California,692,105
+1/19/19,Off-White,Nike-Air-Force-1-Low-Off-White-Volt,392,170,12/19/18,10,New York,31,222
+1/20/19, Yeezy,adidas-Yeezy-Boost-350-V2-Butter,236,220,6/30/18,5,Wisconsin,204,16
+1/21/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,275,220,12/27/18,8.5,New Jersey,25,55
+1/22/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,499,220,12/26/18,5,Oregon,27,279
+1/24/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,272,220,11/18/17,5.5,Arizona,432,52
+1/25/19,Off-White,Air-Jordan-1-Retro-High-Off-White-University-Blue,1012,190,6/23/18,9.5,New Jersey,216,822
+1/26/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,278,220,12/27/18,9.5,California,30,58
+1/28/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Core-Black-White,611,220,12/17/16,10.5,Oregon,772,391
+1/29/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Sesame,270,220,11/23/18,5,California,67,50
+1/30/19,Off-White,Nike-Air-Presto-Off-White-White-2018,567,160,8/3/18,9,Louisiana,180,407
+1/31/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,256,220,12/27/18,13,Florida,35,36
+2/2/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,250,220,4/29/17,8,Georgia,644,30
+2/3/19,Off-White,Nike-Zoom-Fly-Off-White-Black-Silver,360,170,10/13/18,11,New York,113,190
+2/4/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,482,220,12/26/18,9,Ohio,40,262
+2/5/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,501,220,12/26/18,4.5,Oregon,41,281
+2/6/19,Off-White,Nike-Air-Max-90-Off-White-Black,497,160,2/7/19,10,New Jersey,-1,337
+2/6/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,300,220,12/27/18,9,Oregon,41,80
+2/7/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Semi-Frozen-Yellow,290,220,11/18/17,13,New Hampshire,446,70
+2/7/19,Off-White,Nike-Air-Max-90-Off-White-Desert-Ore,532,160,2/7/19,10,Oregon,0,372
+2/7/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static-Reflective,510,220,12/26/18,10.5,Michigan,43,290
+2/8/19,Off-White,Nike-Air-Max-90-Off-White-Black,555,160,2/7/19,11,Oregon,1,395
+2/9/19,Off-White,Nike-Air-Force-1-Low-Off-White-Volt,440,170,12/19/18,10,Georgia,52,270
+2/10/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,417,220,2/25/17,5,New York,715,197
+2/11/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Zebra,360,220,2/25/17,13,Massachusetts,716,140
+2/12/19, Yeezy,Adidas-Yeezy-Boost-350-V2-Cream-White,315,220,4/29/17,4.5,Washington,654,95
+2/12/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,344,220,12/27/18,9.5,California,47,124
+2/13/19, Yeezy,adidas-Yeezy-Boost-350-V2-Static,342,220,12/27/18,9,Oregon,48,122

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sneakerml"
+version = "0.1.0"
+description = "Sneaker resale price estimator"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=3,<4",
+    "scikit-learn>=1.9,<2",
+    "shap>=0.52",
+    "flask>=3.1",
+    "flask-cors>=6",
+    "joblib",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Pytest configuration lives in backend/pytest.ini, which always wins over
+# a [tool.pytest.ini_options] table here -- a duplicated copy in this file
+# would be dead and could silently drift, so it is intentionally absent.
